@@ -1,3 +1,9 @@
 /node_modules
 
 /package-lock.json
+
+/reports/assets
+/reports/wdiomochawesome.json
+/reports/*.html
+
+/errorShots/*.png
