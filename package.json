@@ -1,0 +1,30 @@
+{
+  "name": "wdio-test-with-pom-framework",
+  "version": "1.0.0",
+  "description": "WDIO with Page Object Model along with mocha and cucumber tests",
+  "main": "",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "cucumber-script": "wdio wdio.cucumber.conf",
+    "mocha-script": "wdio wdio.mocha.conf",
+    "report": "marge ./reports/wdiomochawesome.json --reportDir=reports --reportFilename=mocha-report --reportTitle=Project-Results --saveHtml=true --overwrite=false",
+    "killChrome": "taskkill /IM 2.43-x64-chromedriver /F",
+    "mocha": "npm run mocha-script && npm run report && npm run killChrome",
+    "cucumber": "npm run cucumber-script && npm run killChrome"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wdio": "^3.0.3"
+  },
+  "devDependencies": {
+    "mochawesome-report-generator": "^3.1.5",
+    "wdio-mocha-framework": "^0.6.4",
+    "wdio-mochawesome-reporter": "^2.0.1",
+    "wdio-cucumber-framework": "~2.2.8",
+    "wdio-selenium-standalone-service": "0.0.12",
+    "wdio-spec-reporter": "^0.1.5"
+  }
+}
