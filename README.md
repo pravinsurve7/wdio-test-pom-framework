@@ -17,9 +17,13 @@ This project includes two ways or two style of writing test cases.
 1. mocha
 2. cucumber
 
+To run script via mocha
+```npm
+npm run mocha 
 ```
-npm run mocha # to run script via mocha
-npm run cucumber #to run script via cucumber bdd
+To run script via cucumber bdd
+```npm
+npm run cucumber
 ```
 
 ## Info links
